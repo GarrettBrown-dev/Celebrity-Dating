@@ -1,3 +1,15 @@
-.dating_quiz{
+#dating_quiz{
+  display:none
+}
+
+#soulmate_1, #soulmate_2,
+#soulmate_3, #soulmate_4,
+#soulmate_5{
   display: none
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
