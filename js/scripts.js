@@ -2,19 +2,26 @@ $(document).ready(function() {
   $(".btn").click(function() {
     $("#dating_quiz").show();
   });
-
-  $("#dating_quiz").submit(function(event) {
-       
-    const beverage = $("#beverage").val();
-
-    if ("1") :upload.wikimedia.org/wikipedia/commons/9/99/Chris_Pratt_2018.jpg)
-    if ("2") :static.scientificamerican.com/blogs/cache/file/7069F0BB-A9AB-4932-84F508BBC0136458_source.jpg?w=590&h=800&F754D658-CE37-41EE-BE2C0EFC7134D582)
-    if ("3") :upload.wikimedia.org/wikipedia/commons/1/1e/Randy_Savage_1986.jpg)
-    if ("4") :pmcvariety.files.wordpress.com/2019/08/shutterstock_editorial_10369663y.jpg?w=681&h=383&crop=1)
-    if ("5") :filmschoolrejects.com/wp-content/uploads/2019/08/jeff-goldblum.jpg)
-
-    const person1Input = $("input#name").val();
-    $(".name").text(nameInput);
+  
+  $("dating_quiz").submit(function(event) {
+    const answer = parseInt($("secret_question").val());
+   
+   
+    if(answer === 1) {
+    $("#soulmate_1").show();
+    } 
+    else if (answer === 2) {
+    $("#soulmate_2").show();
+    } 
+    else if (answer === 3) {
+    $("#soulmate_3").show();
+    }
+    else if (answer === 4) {
+    $("#soulmate_4").show();
+    }
+    else if (answer === 5) {
+    $("#soulmate_5").show();
+    }
     event.preventDefault();
   });
 });
